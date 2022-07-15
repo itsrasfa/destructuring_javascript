@@ -33,3 +33,16 @@ const top_linguagens = ["Python", "Java", "PHP", "JavaScript", "C++"]
 
 const [, , , linguagem_favorita] = top_linguagens;
 console.log(linguagem_favorita)
+
+// Destructuring em argumentos
+
+/* function handleKeyboard(event) {
+  console.log(event.key)
+}
+*/
+
+function handleKeyboard({key}) {
+  console.log(key)
+}
+
+document.addEventListener('keyup', handleKeyboard)
